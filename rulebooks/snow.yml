@@ -8,7 +8,7 @@
   
   rules:
     - name: Run job template
-      #condition: event.payload.message == "Incoming message"
+      condition: event.payload.message == "Incoming message"
       action:
         run_job_template:
           name: "New RHEL Server RITM from ServiceNow"
